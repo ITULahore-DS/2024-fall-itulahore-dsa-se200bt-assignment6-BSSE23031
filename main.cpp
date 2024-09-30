@@ -21,6 +21,7 @@ int main()
         cout << "8: Dequeue from the Queue" << endl;
         cout << "9: Get size of Queue" << endl;
         cout << "10: Print Queue" << endl;
+        cout << "11: Peek from Queue" << endl;
         cout << "Enter your choice" << endl;
         cin >> x;
 
@@ -94,8 +95,20 @@ int main()
             myQueue.printQueue();
         }
         break;
+        case 11:
+        {
+            if(myQueue.peek() != -1)
+            {
+                cout<<"The element at the top of Queue is : "<< myQueue.peek()<<endl;
+            }
+            else
+            {
+                cout<<"Queue is empty"<<endl;
+            }
+        }
+        break;
         }
 
-    } while (x >= 1 && x <= 10);
+    } while (x >= 1 && x <= 11);
     return 0;
 }
