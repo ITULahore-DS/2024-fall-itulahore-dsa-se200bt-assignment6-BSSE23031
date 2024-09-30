@@ -49,6 +49,7 @@ class Queue
         void dequeue();
         int size();
         void printQueue();
+        int peek();
 };
 
 #endif

@@ -191,3 +191,13 @@ void Queue::printQueue()
 
     cout<<endl;
 }
+
+int Queue::peek()
+{
+    if(top != nullptr)
+    {
+        return top->getData();
+    }
+    return -1;
+
+}
